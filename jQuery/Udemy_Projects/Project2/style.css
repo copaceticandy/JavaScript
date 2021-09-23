@@ -1,0 +1,19 @@
+label {
+    text-align: end;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
+
+.hidden {
+    overflow: hidden;
+    max-height: 0;
+    color: blue;
+}
+
+
+/* input {
+    border-color: red;
+} */

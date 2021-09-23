@@ -1,0 +1,1 @@
+Repository contains exercises and mini projects for Javascript

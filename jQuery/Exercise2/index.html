@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="modify.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My Favorite Movies</h1>
+    <form id="inputs" name="inputs">
+        <label for="title">
+        Title
+        <input type="text" name="title" id="title" required>
+    </label>
+        <label for="rating">
+            Rating
+            <input type="number" id="rating" placeholder="Rate the movie from 0 to 10" min="0" max="10" required>
+        </label>
+        <input id="submit" type="submit" value="Add Movie">
+    </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th id="title">
+                    Title
+                    <div class="arrows">
+                        <i class="arrow up"></i>
+                        <br>
+                        <i class="arrow down"></i>
+                    </div>
+                </th>
+                <th id="rating"> Rating
+                    <div class="arrows">
+                        <i class="arrow up"></i>
+                        <br>
+                        <i class="arrow down"></i>
+                    </div>
+                </th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

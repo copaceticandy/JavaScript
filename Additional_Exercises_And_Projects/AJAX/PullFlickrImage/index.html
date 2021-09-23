@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script> -->
+    <script>
+        // $(function() {
+        //     $.ajax({
+        //         method: "GET",
+        //         url: "http://api.flickr.com/services/feeds/photos_public.gne",
+        //         // jsonp: "callback",
+        //         // dataType: "jsonp",
+        //         data: {
+        //             tags: "cat",
+        //             tagmode: "any"
+        //                 // format: "json",
+        //         }
+        //     }).then(function(response) {
+        //         // var body = document.querySelector("body");
+        //         // body.innerText = response;
+        //         // console.log(response);
+        //     })
+        // })
+
+        var XHR = new XMLHttpRequest();
+        XHR.onreadystatechange = function() {
+            if (XHR.readyState == 4 && XHR.status == 200) {
+                console.log(JSON.parse(XHR.responseText))
+            }
+        };
+        XHR.open("GET", "http://api.flickr.com/services/feeds/photos_public.gne");
+        XHR.send();
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

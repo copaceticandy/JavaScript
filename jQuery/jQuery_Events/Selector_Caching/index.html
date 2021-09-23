@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script>
+        $(function() {
+            var $container = $("#container");
+
+            $container.text("Hello World!");
+            $container.css('color', 'red');
+            $container.on("mouseenter", function(e) {
+                console.log("moused over!");
+            });
+
+            var $newDiv = $("<div>", {
+                text: "I am a div!",
+                css: {
+                    color: "green"
+                }
+            });
+
+            $container.append($newDiv);
+        });
+    </script>
+</body>
+
+</html>

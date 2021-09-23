@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#remove-giph {
+    background-color: red;
+    color: white;
+}
+
+#search-giph:hover {
+    background-color: black;
+}
+
+#search-giph {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+form {
+    margin-left: 450px;
+}
